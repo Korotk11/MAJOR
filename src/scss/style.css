@@ -1,0 +1,491 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.header {
+  padding: 30px;
+  background-color: #fffbf6;
+  align-items: center;
+}
+.header_inner {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+}
+.header-menu1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  list-style: none;
+  text-decoration: none;
+  background-color: #645b3c;
+  padding: 25px 58px;
+  border-radius: 8px;
+}
+.header-menu2 {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+}
+.header-menu_item2 {
+  margin-right: 50px;
+}
+.header-menu_link {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+.header-menu_link1 {
+  list-style: none;
+  text-decoration: none;
+  color: #000;
+}
+
+.contact {
+  padding: 50px 50px;
+  background-color: #fffbf6;
+}
+.contact-name_text {
+  font-size: 26px;
+  max-width: 500px;
+  margin-top: 80px;
+  margin-left: 70px;
+}
+.contact-boxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.contact-box {
+  margin-left: 70px;
+  margin-top: 50px;
+  background-color: white;
+  max-width: 570px;
+  border-radius: 0px 25px 0px 0px;
+  box-shadow: 13px -1px 37px -3px rgba(34, 60, 80, 0.17);
+  padding: 32px 40px 70px 40px;
+}
+.contact-box_name {
+  font-size: 24px;
+}
+.contact-box_num1 {
+  margin-left: 40px;
+}
+.contact-box_num2 {
+  margin-left: 18px;
+}
+.contact-box_num3 {
+  margin-left: 95px;
+}
+.contact-box_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 480px;
+}
+.contact-box_text {
+  display: flex;
+}
+.contact-box_text img {
+  margin-right: 10px;
+}
+.contact-address {
+  margin-top: 50px;
+  align-items: center;
+}
+.contact-address_name {
+  margin-left: 70px;
+  font-size: 22px;
+}
+.contact-address_text {
+  margin-left: 70px;
+  margin-top: 16px;
+}
+
+.map {
+  text-align: center;
+  padding: 95px 95px;
+  margin-left: 50px;
+}
+
+.footer {
+  padding: 30px;
+  background-color: #fffbf6;
+  align-items: center;
+}
+.footer_inner {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+}
+.footer-menu1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  list-style: none;
+  text-decoration: none;
+  background-color: #645b3c;
+  padding: 25px 58px;
+  border-radius: 8px;
+  max-width: 620px;
+}
+.footer-menu2 {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+}
+.footer-menu_item2 {
+  margin-right: 50px;
+}
+.footer-menu_link {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+.footer-menu_link1 {
+  list-style: none;
+  text-decoration: none;
+  color: #000;
+}
+.footer-copirate {
+  color: #645b3c;
+  text-align: center;
+  margin-top: 94px;
+}
+.footer-copirate_text {
+  font-size: 20px;
+  border-top: #645b3c solid 5px;
+  border-radius: 5px;
+  padding-top: 30px;
+}
+
+.types {
+  margin-bottom: 150px;
+  padding: 0px 30px;
+}
+.types-name {
+  font-size: 48px;
+  color: #375f0f;
+  max-width: 315px;
+  margin-top: 182px;
+  margin-bottom: 65px;
+}
+.types-card {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: #8b9d83 solid 4px;
+}
+.types-card_number {
+  font-size: 70px;
+  color: #375f0f;
+}
+.types-card_name {
+  margin-top: 40px;
+  margin-left: 30px;
+  font-size: 32px;
+  max-width: 250px;
+}
+.types-card_name_3 {
+  margin-top: 40px;
+  margin-left: 22px;
+  margin-right: 70px;
+  font-size: 32px;
+  max-width: 250px;
+}
+.types-card_text {
+  margin-top: 50px;
+  max-width: 401px;
+}
+
+.galery {
+  background-color: #fffbf6;
+  padding: 150px 30px 10px 30px;
+  margin-bottom: 100px;
+  position: relative;
+  z-index: 0;
+}
+.galery-name {
+  font-size: 48px;
+  color: #375f0f;
+  margin-bottom: 65px;
+}
+
+.news {
+  margin-bottom: 70px;
+  position: relative;
+  z-index: 0;
+}
+.news-name {
+  font-size: 48px;
+  color: #375f0f;
+  margin-bottom: 40px;
+}
+.news-box_name {
+  font-size: 20px;
+  margin-top: 27px;
+  margin-bottom: 15px;
+  max-width: 375px;
+}
+.news-box_text {
+  max-width: 365px;
+}
+
+.welcome_inner {
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 170px;
+}
+
+.card_inner {
+  text-align: center;
+  margin-top: 94px;
+  margin-bottom: 200px;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  padding: 30px;
+  overflow-y: auto;
+  display: none;
+  z-index: 1;
+}
+
+.modal__main {
+  position: relative;
+  max-width: 700px;
+  background-color: #fff;
+  margin: auto;
+  color: #000;
+  border-radius: 16px;
+  padding: 30px 60px 60px;
+  cursor: default;
+}
+
+.modal__title {
+  text-align: center;
+  color: #375f0f;
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+
+.modal__container {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.modal__text {
+  text-align: center;
+  color: #375f0f;
+}
+
+input[type=text] {
+  width: 520px;
+  height: 100px;
+  border-radius: 30px; /* чтобы создать округлую форму */
+  border: 2px solid #375f0f; /* устанавливаем границу цвета #375F0F */
+  font-size: 30px; /* размер шрифта можно менять по вашему желанию */
+  padding: 0 0 0 20px;
+  margin-bottom: 15px; /* добавляем немного отступа снизу */
+}
+
+.modal__btn {
+  background-color: #375f0f;
+  color: #fff;
+  font-size: 26px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  border-radius: 20px;
+  border: none;
+  padding: 15px 30px;
+  margin-bottom: 30px;
+}
+
+.modal__close {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 22px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  outline: 1px solid transparent;
+  outline-offset: 3px;
+  transition: outline-color 0.15s ease-in-out;
+  border-radius: 3px;
+  padding: 0;
+  text-align: center;
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+.modal__close:focus-visible {
+  outline-color: green;
+}
+
+.registration {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.registration-title {
+  text-align: left;
+  font-size: 80px;
+  font-weight: 500;
+  color: #375f0f;
+  margin-bottom: 80px;
+}
+.registration-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 45px;
+}
+.registration-box_text {
+  margin-left: 80px;
+  text-align: left;
+  font-size: 32px;
+  margin-bottom: 19px;
+  color: #375f0f;
+  font-weight: 500;
+}
+.registration__btn {
+  background-color: #375f0f;
+  color: #fff;
+  font-size: 26px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  border-radius: 20px;
+  border: none;
+  padding: 15px 30px;
+  margin-top: 86px;
+  margin-bottom: 90px;
+  max-width: 375px;
+}
+
+.personal-box {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 70px;
+}
+
+.personal-box h1 {
+  font-size: 70px;
+  font-weight: 500;
+  color: #375f0f;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.personal-box h2 {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  font-size: 55px;
+  font-weight: 500;
+  color: #375f0f;
+  text-align: left;
+}
+
+.personal-box p {
+  text-align: left;
+  font-size: 40px;
+  font-weight: 500;
+  color: #375f0f;
+}
+
+input[type=date] {
+  display: block;
+  margin: 0 auto;
+  width: 420px;
+  height: 100px;
+  border-radius: 30px; /* чтобы создать округлую форму */
+  border: 2px solid #375f0f; /* устанавливаем границу цвета #375F0F */
+  font-size: 30px; /* размер шрифта можно менять по вашему желанию */
+  padding: 0 20px 0 20px;
+  margin-bottom: 15px;
+  color: #375f0f;
+}
+
+.home label[for=home_number] {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  color: #375f0f;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.home select {
+  display: block;
+  margin: 0 auto;
+  width: 420px;
+  height: 100px;
+  font-size: 30px;
+  padding: 0 40px 0 20px;
+  border: 2px solid #375f0f;
+  border-radius: 30px;
+  color: #375f0f;
+  margin-bottom: 15px;
+}
+
+.section__button2 {
+  background-color: #375f0f;
+  color: #fff;
+  font-size: 26px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  border-radius: 20px;
+  border: none;
+  padding: 15px 30px;
+  margin-top: 86px;
+  margin-bottom: 90px;
+  max-width: 375px;
+}
+
+table {
+  display: block;
+  margin: 0 auto;
+  width: 900px;
+  height: 200px;
+  font-size: 30px;
+  padding: 0 40px 0 20px;
+  border: 2px solid #375f0f;
+  border-radius: 30px;
+  color: #375f0f;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 375px) {
+  .header__inner {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=style.css.map */

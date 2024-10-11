@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MAJOR</title>
+    <link rel="stylesheet" href="/src/scss/style.css" />
+    <script src="/src/js/modyle.js" defer></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header_inner container">
+        <a href="/mainpage.html">
+        <img  src="/src/img/logo.svg" class="header-logo" alt="" />
+        </a>
+        <ul class="header-menu1">
+          <li class="header-menu_item1">
+            <a href="/finishing.html" class="header-menu_link"
+              ><h2>Отделка</h2></a
+            >
+          </li>
+          <li class="header-menu_item1">
+            <a href="/index.html" class="header-menu_link"
+              ><h2>Расположение</h2></a
+            >
+          </li>
+          <li class="header-menu_item1">
+            <a href="/galery.html" class="header-menu_link"><h2>Галерея</h2></a>
+          </li>
+        </ul>
+        <ul class="header-menu2">
+          <li class="header-menu_item2">
+            <a href="/index.html" class="header-menu_link1"
+              ><h2>Контакты</h2></a
+            >
+          </li>
+          <li class="header-menu_item2">
+            <a href="/galery.html" class="header-menu_link1"
+              ><h2>Новости</h2></a
+            >
+          </li>
+          <li class="header-menu_item2">
+            <a class="section__button section__button1">
+              <h2>Вход</h2>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- <section class="section">
+        <h1 class="section__title">Модальное окно</h1>
+        <button class="section__button section__button1">Открыть</button>
+      </section> -->
+      <form method="post" action="/autorization.php" class="form form_auth">
+        <div class="modal modal1">
+          <div class="modal__main">
+            <h2 class="modal__title">Авторизация</h2>
+
+            <div class="modal__container">
+              <p class="modal__text">Введите ваш email</p>
+              <input
+                type="text"
+                id="loginEmail"
+                name="loginEmail"
+                placeholder="Email"
+              />
+              <p class="modal__text">Введите ваш пароль</p>
+              <input
+                type="text"
+                id="loginPassword"
+                name="loginPassword"
+                placeholder="Пароль"
+              />
+            </div>
+            <div
+              class="g-recaptcha"
+              data-sitekey="6LejWUsqAAAAAFSxlUnMUjKJntcyfymAhfAupsNw"
+              style="justify-content: center; display: flex; margin: 20px"
+            ></div>
+            <button
+              class="form__submit modal__btn"
+              type="submit"
+              id="login-submit"
+            >
+              Авторизоваться
+            </button>
+            <button class="modal__btn" onclick="redirectToAnotherPage()">
+              Зарегистрироваться
+            </button>
+            <button class="modal__close">&#10006;</button>
+          </div>
+        </div>
+      </form>
+      <section class="contact">
+        <div class="contact-name container">
+        <p class="contact-name_text">
+          Связаться с компанией MAJOR вы сможете с помощью одного из этих
+          способов:
+        </p>
+        </div>
+        <div class="contact-boxes container">
+        <div class="contact-box">
+          <p class="contact-box_name">Телефоны:</p>
+          <div class="contact-box_info">
+            <div class="contact-box_item">
+              <div class="contact-box_text">
+                <p><h2>Отдел продаж:</h2></p>
+                <p class="contact-box_num1"><h2>+7 (900) 800 55 66</h2></p>           
+              </div>
+             <div class="contact-box_text">      
+                <p><h2>Отдел логистики:</h2></p>
+                <p class="contact-box_num2"><h2>+7 (900) 800 55 66</h2></p>
+              </div>
+              
+            </div>
+            <div class="contact-box_img">
+                <img src="/src/img/telephone.svg" alt="" />
+              </div>
+          </div>
+        </div>
+        <div class="contact-box">
+          <p class="contact-box_name">Почта:</p>
+          <div class="contact-box_info">
+            <div class="contact-box_item">
+              <div class="contact-box_text">
+                <p><h2>Отдел продаж:</h2></p>
+                <p class="contact-box_num1"><h2>isip_d.d.korotky@mpt.ru</h2></p>           
+              </div>
+             <div class="contact-box_text">      
+                <p><h2>Отдел логистики:</h2></p>
+                <p class="contact-box_num2"><h2>isip_d.d.korotky@mpt.ru</h2></p>
+              </div>
+              
+            </div>
+            <div class="contact-box_img">
+                <img src="/src/img/email.svg" alt="" />
+              </div>
+          </div>
+        </div>
+        <div class="contact-box">
+          <p class="contact-box_name">График работы:</p>
+          <div class="contact-box_info">
+            <div class="contact-box_item">
+              <div class="contact-box_text">
+                <p><h2>Пн - Пт:</h2></p>
+                <p class="contact-box_num3"><h2>с 9:00 до 18:00</h2></p>           
+              </div>
+             <div class="contact-box_text">      
+                <p><h2>Сб - Вс:</h2></p>
+                <p class="contact-box_num3"><h2>Выходной</h2></p>
+              </div>
+              
+            </div>
+            <div class="contact-box_img">
+                <img src="/src/img/calendar.svg" alt="" />
+              </div>
+          </div>
+        </div>
+        <div class="contact-box">
+          <p class="contact-box_name">Мессенджеры:</p>
+          <div class="contact-box_info">
+            <div class="contact-box_item">
+              <div class="contact-box_text">
+                <img src="/src/img/Telegram.svg" alt="">
+                <img src="/src/img/WhatsApp.svg" alt="">
+                <img src="/src/img/вайбер.svg" alt="">         
+              </div>
+             
+              
+            </div>
+            <div class="contact-box_img">
+                <img src="/src/img/mesage.jpg" alt="" />
+              </div>
+          </div>
+        </div>
+        </div>
+        <div class="contact-address container">
+            <p class="contact-address_name">Компания MAJOR находится по адресу:</p>
+            <p class="contact-address_text">Россия, Тверсой район. г. Москва, ТЦ "Стиль"</p>
+        </div>
+      </section>
+      <section class="map">
+        <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/org/sbs_stil/1311085699/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">СБС-Стиль</a><a href="https://yandex.ru/maps/213/moscow/category/shopping_mall/184108083/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Торговый центр в Москве</a><iframe src="https://yandex.ru/map-widget/v1/?filter=alternate_vertical%3ARequestWindow&ll=37.608960%2C55.595739&mode=search&oid=1311085699&ol=biz&sctx=ZAAAAAgBEAAaKAoSCVMiiV5G2UJAEZ1mgXaHzktAEhIJp8mMt5VezT8RnIcTmE7rtj8iBgABAgMEBSgKOABAiJ8BSAFqAnJ1nQHNzEw9oAEAqAEAvQG7j2hEwgELwMOL0fYBg6mW8QSCAg%2FRgtGGINGB0YLQuNC70YyKAgCSAgCaAgxkZXNrdG9wLW1hcHM%3D&sll=37.608960%2C55.595739&sspn=0.010498%2C0.004098&text=%D1%82%D1%86%20%D1%81%D1%82%D0%B8%D0%BB%D1%8C&z=17.11" width="1150" height="615" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+      </section>
+    </main>
+<footer class="footer">
+    <div class="footer_inner container">
+     <ul class="footer-menu1">
+          <li class="footer-menu_item1">
+            <a href="" class="footer-menu_link"><h2>Отделка</h2></a>
+          </li>
+          <li class="footer-menu_item1">
+            <a href="" class="footer-menu_link"><h2>Расположение</h2></a>
+          </li>
+          <li class="footer-menu_item1">
+            <a href="" class="footer-menu_link"><h2>Галерея</h2></a>
+        </li>
+        </ul>
+        <ul class="footer-menu2">
+          <li class="footer-menu_item2">
+            <a href="" class="footer-menu_link1"><h2>Контакты</h2></a>
+          </li>
+          <li class="footer-menu_item2">
+            <a href="" class="header-menu_link1"><h2>Новости</h2></a>
+          </li>
+          <li class="footer-menu_item2">
+            <a href="" class="footer-menu_link1"><h2>Вход</h2></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-copirate">
+        <p class="footer-copirate_text">© MAJOR 2024</p>
+      </div>
+</footer>
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>

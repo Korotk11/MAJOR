@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MAJOR</title>
+    <link rel="stylesheet" href="/src/scss/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="/src/js/modyle.js" defer></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header_inner container">
+        <a href="/mainpage.html">
+          <img src="/src/img/logo.svg" class="header-logo" alt="" />
+        </a>
+        <ul class="header-menu1">
+          <li class="header-menu_item1">
+            <a href="/finishing.html" class="header-menu_link"
+              ><h2>Отделка</h2></a
+            >
+          </li>
+          <li class="header-menu_item1">
+            <a href="/index.html" class="header-menu_link"
+              ><h2>Расположение</h2></a
+            >
+          </li>
+          <li class="header-menu_item1">
+            <a href="/galery.html" class="header-menu_link"><h2>Галерея</h2></a>
+          </li>
+        </ul>
+        <ul class="header-menu2">
+          <li class="header-menu_item2">
+            <a href="/index.html" class="header-menu_link1"
+              ><h2>Контакты</h2></a
+            >
+          </li>
+          <li class="header-menu_item2">
+            <a href="/galery.html" class="header-menu_link1"
+              ><h2>Новости</h2></a
+            >
+          </li>
+          <li class="header-menu_item2">
+            <a class="section__button section__button1">
+              <h2>Вход</h2>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- <section class="section">
+        <h1 class="section__title">Модальное окно</h1>
+        <button class="section__button section__button1">Открыть</button>
+      </section> -->
+      <form method="post" action="/autorization.php" class="form form_auth">
+        <div class="modal modal1">
+          <div class="modal__main">
+            <h2 class="modal__title">Авторизация</h2>
+
+            <div class="modal__container">
+              <p class="modal__text">Введите ваш email</p>
+              <input
+                type="text"
+                id="loginEmail"
+                name="loginEmail"
+                placeholder="Email"
+              />
+              <p class="modal__text">Введите ваш пароль</p>
+              <input
+                type="text"
+                id="loginPassword"
+                name="loginPassword"
+                placeholder="Пароль"
+              />
+            </div>
+            <div
+              class="g-recaptcha"
+              data-sitekey="6LejWUsqAAAAAFSxlUnMUjKJntcyfymAhfAupsNw"
+              style="justify-content: center; display: flex; margin: 20px"
+            ></div>
+            <button
+              class="form__submit modal__btn"
+              type="submit"
+              id="login-submit"
+            >
+              Авторизоваться
+            </button>
+            <button class="modal__btn" onclick="redirectToAnotherPage()">
+              Зарегистрироваться
+            </button>
+            <button class="modal__close">&#10006;</button>
+          </div>
+        </div>
+      </form>
+      <section class="galery">
+        <div class="galery container">
+          <h1 class="galery-name">Фотографии производства</h1>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="/src/img/galery1.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/src/img/galery2.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/src/img/galery1.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/src/img/galery2.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/src/img/galery1.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/src/img/galery2.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/src/img/galery1.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/src/img/galery2.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/src/img/galery1.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <section class="news">
+        <div class="news container">
+          <h1 class="news-name">Последние статьи</h1>
+          <div class="swiper mySwiper2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="news-box">
+                  <img class="news-box_img" src="/src/img/news1.png" alt="" />
+                  <p class="news-box_name">
+                    Готовый загородный дом или самостоятельное строительство?
+                  </p>
+                  <h2 class="news-box_text">
+                    Купить или построить дом с нуля – неизбежный вопрос, когда
+                    возникает желание приобрести частную недвижимость за
+                    городом.
+                  </h2>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="news-box">
+                  <img class="news-box_img" src="/src/img/news2.png" alt="" />
+                  <p class="news-box_name">
+                    Авторские проекты домов – почему эксклюзив выгоднее
+                  </p>
+                  <h2 class="news-box_text">
+                    Владельцу предстоит решить вопрос: купить готовый типовой
+                    вариант или заказать индивидуальный.
+                  </h2>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="news-box">
+                  <img class="news-box_img" src="/src/img/news3.png" alt="" />
+                  <p class="news-box_name">
+                    Красивые дома: 100+ фото лучших проектов
+                  </p>
+                  <h2 class="news-box_text">
+                    Современная малоэтажная застройка в России представлена как
+                    типовыми архитектурными решениями, популярными.
+                  </h2>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="news-box">
+                  <img class="news-box_img" src="/src/img/news1.png" alt="" />
+                  <p class="news-box_name">
+                    Готовый загородный дом или самостоятельное строительство?
+                  </p>
+                  <h2 class="news-box_text">
+                    Купить или построить дом с нуля – неизбежный вопрос, когда
+                    возникает желание приобрести частную недвижимость за
+                    городом.
+                  </h2>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="news-box">
+                  <img class="news-box_img" src="/src/img/news2.png" alt="" />
+                  <p class="news-box_name">
+                    Авторские проекты домов – почему эксклюзив выгоднее
+                  </p>
+                  <h2 class="news-box_text">
+                    Владельцу предстоит решить вопрос: купить готовый типовой
+                    вариант или заказать индивидуальный.
+                  </h2>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="news-box">
+                  <img class="news-box_img" src="/src/img/news3.png" alt="" />
+                  <p class="news-box_name">
+                    Красивые дома: 100+ фото лучших проектов
+                  </p>
+                  <h2 class="news-box_text">
+                    Современная малоэтажная застройка в России представлена как
+                    типовыми архитектурными решениями, популярными.
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div #swiperRef="" class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="news-box">
+                  <img class="news-box_img" src="/src/img/news1.png" alt="" />
+                  <p class="news-box_name">
+                    Готовый загородный дом или самостоятельное строительство?
+                  </p>
+                  <h2 class="news-box_text">
+                    Купить или построить дом с нуля – неизбежный вопрос, когда
+                    возникает желание приобрести частную недвижимость за
+                    городом.
+                  </h2>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="news-box">
+                  <img class="news-box_img" src="/src/img/news2.png" alt="" />
+                  <p class="news-box_name">
+                    Авторские проекты домов – почему эксклюзив выгоднее
+                  </p>
+                  <h2 class="news-box_text">
+                    Владельцу предстоит решить вопрос: купить готовый типовой
+                    вариант или заказать индивидуальный.
+                  </h2>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="news-box">
+                  <img class="news-box_img" src="/src/img/news3.png" alt="" />
+                  <p class="news-box_name">
+                    Красивые дома: 100+ фото лучших проектов
+                  </p>
+                  <h2 class="news-box_text">
+                    Современная малоэтажная застройка в России представлена как
+                    типовыми архитектурными решениями, популярными.
+                  </h2>
+                </div>
+              </div>
+              <div class="swiper-slide">Slide 4</div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div> -->
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer_inner container">
+        <ul class="footer-menu1">
+          <li class="footer-menu_item1">
+            <a href="" class="footer-menu_link"><h2>Отделка</h2></a>
+          </li>
+          <li class="footer-menu_item1">
+            <a href="" class="footer-menu_link"><h2>Расположение</h2></a>
+          </li>
+          <li class="footer-menu_item1">
+            <a href="" class="footer-menu_link"><h2>Галерея</h2></a>
+          </li>
+        </ul>
+        <ul class="footer-menu2">
+          <li class="footer-menu_item2">
+            <a href="" class="footer-menu_link1"><h2>Контакты</h2></a>
+          </li>
+          <li class="footer-menu_item2">
+            <a href="" class="header-menu_link1"><h2>Новости</h2></a>
+          </li>
+          <li class="footer-menu_item2">
+            <a href="" class="footer-menu_link1"><h2>Вход</h2></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-copirate">
+        <p class="footer-copirate_text">© MAJOR 2024</p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>
